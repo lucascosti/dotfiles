@@ -4,7 +4,6 @@
   "workbench.editor.tabSizing": "shrink",
   "editor.renderWhitespace": "boundary",
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.mouseWheelZoom": true,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.minimap.showSlider": "always",
@@ -18,7 +17,5 @@
   "workbench.editor.restoreViewState": false,
   "workbench.activityBar.visible": true,
   "editor.occurrencesHighlight": false,
-  "editor.wordWrap": "bounded",
-  "workbench.iconTheme": "file-icons",
-  "workbench.colorTheme": "One Dark Pro",
+  "editor.wordWrap": "bounded"
  }
