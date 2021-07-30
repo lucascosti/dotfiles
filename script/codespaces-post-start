@@ -1,0 +1,9 @@
+#!/bin/sh
+# Run by GitHub Codespaces after starting
+# Inspired from https://github.com/MikeMcQuaid/dotfiles/blob/master/script/codespaces-post-start
+
+# Always want to use ZSH as my default shell (e.g. for SSH)
+if ! grep -q "root.*/bin/zsh" /etc/passwd
+then
+  chsh -s /bin/zsh root
+fi
