@@ -1,0 +1,11 @@
+ #!/bin/sh
+ 
+ # Stuff for a Codespaces environment
+if [ -n "$CODESPACES" ]; then
+  # remove the config repo if it already exists
+  rm -rf ~/repos/mac-config
+  # clone the config repo. Make it a shallow clone and be sure to include the submodules
+  git clone git://github.com/lucascosti/mac-config.git --recurse-submodules --shallow-submodules --depth 1 ~/repos/mac-config
+  # Create/overwrite the home folder .zshrc file to source the repo's .zhrc
+  echo -e "# source the git repo version \nsource ~/repos/mac-config/zsh/.zshrc\n" > ~/.zshrc
+fi
