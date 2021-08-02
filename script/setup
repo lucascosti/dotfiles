@@ -2,6 +2,9 @@
  
  # Stuff for a Codespaces environment
 if [ -n "$CODESPACES" ]; then
+  # Set ZSH as the default shell
+  chsh -s /usr/bin/zsh $(whoami)
+
   # remove the config repo if it already exists
   rm -rf ~/repos/mac-config
   # clone the config repo. Make it a shallow clone and be sure to include the submodules
