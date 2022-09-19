@@ -2,6 +2,9 @@
  
  # Stuff for a Codespaces environment
 if [ -n "$CODESPACES" ]; then
+  # install Oh My Posh:
+  sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+  sudo chmod +x /usr/local/bin/oh-my-posh
 
   # remove the config repo if it already exists
   rm -rf ~/repos/mac-config
